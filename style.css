@@ -1,0 +1,305 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url("fonts/TTLakes-Regular.ttf");
+}
+
+@font-face {
+    font-family: "TTLakes-bold";
+    src: url("fonts/TTLakes-Medium.ttf");
+}
+
+body {
+    font-family: "TTLakes"; 
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-width: 320px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    height: 88px; 
+    box-shadow: 0 1px 0 #D9FFF5;
+}
+
+.header__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    
+}
+
+.header__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.header__left-burger {
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    
+} 
+
+.header__left-divider {
+    display: none;
+    width: 2px;
+    height: 32px;
+    margin-left: 16px;   
+} 
+
+.header__left-logo {
+    width: 96.55px;
+    height: 50.81px;
+    margin-left: 16px;
+}
+
+.header__right-call {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.header__right-chat {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.header__right-profile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.header__right-divider {
+    width: 2px;
+    height: 32px;
+    margin-right: 20px;   
+} 
+
+.header__right-tools {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+} 
+
+.header__right-search {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+} 
+
+/* Основное */
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.content__large-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.content__large-menu {
+    display: none;
+}
+
+
+.content__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 390px;
+    height: 40px;
+}
+
+.content__img {
+    width: 4px;
+    height: 40px;
+}
+
+.content__name-txt {
+    font-family: "TTLakes-bold";
+    margin-left: 12px;
+    font-size: 27px;
+    font-weight: 900;
+    color: #1B1C21;
+}
+
+.content__menu {
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    color: #7E7E82;
+    margin-left: 16;
+    overflow-x:auto;
+    gap: 16px;    
+}
+
+.content__menu::-webkit-scrollbar { display: none; }
+
+.content__menu a:nth-child(1) {
+    width: 230px;
+    height: 40px;
+    flex: none;
+    margin-left: 16px;
+    padding-top: 8px;
+    background-image: url(images/back.png);
+    background-size: 230px 40px;
+    background-repeat: no-repeat;
+}
+
+.content__menu a:nth-child(2) {
+    width: 200px;
+    height: 40px;
+    flex: none;
+    padding-top: 8px;
+    
+}
+
+.content__menu a:nth-child(3) {
+    width: 130px;
+    height: 40px;
+    flex: none;
+    padding-top: 8px;
+}
+
+.content__menu a:nth-child(4) {
+    width: 220px;
+    height: 40px;
+    flex: none;
+    padding-top: 8px;
+}
+
+.content__menu a:nth-child(5) {
+    width: 180px;
+    height: 40px;
+    flex: none;
+    padding-top: 8px;
+}
+
+.content__menu a:visited, .content__menu a:link {
+    color: #7E7E82;
+    text-decoration: none;
+}
+
+
+
+.content__text {
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    color: #1B1C21;
+}
+
+.content__full-text {
+    display: none;
+}
+
+.content__button {
+    display: flex;
+    align-items: center; 
+    height: 24;  
+    margin-bottom: 16px;
+}
+
+.content__expand-img {
+    width: 24px;
+    height: 24px;
+}
+
+.content__read-more {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #1B1C21;
+}
+
+.content__topic-img {
+    width: 320px;
+    height: 176px;
+}
+
+.content__feedback {
+    display: none;
+}
+
+.content__text-more {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .header__left-divider {
+        display: block;
+    }
+    .header__right-call {
+        display:block;
+    }
+    .header__right-chat {
+        display: block;
+    }
+    .header__right-profile {
+        display: block;
+    }
+    .content__article {
+        display: flex;
+        flex-direction: row;
+    }
+    .content__full-text {
+        display: block;
+    }
+    .content__topic-img {
+        width: 360px;
+        height: 208px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .header {
+        display: none;
+    }
+    body {        
+        max-width: 1200px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content__feedback {
+        display: block;
+        margin-left: 16px;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #7E7E82;
+    }
+    .content__topic-img {
+        width: 531px;
+        height: 307px;
+    }
+    .content__text-more {
+        display: inline;
+    }
+    .content__large-bar {
+        margin-top: 42px;
+    }
+    .content__large-menu {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .content__large-menu img {
+        margin-left: 8px;
+        margin-right: 32px;
+    }
+}
