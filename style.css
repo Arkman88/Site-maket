@@ -193,8 +193,6 @@ body {
     text-decoration: none;
 }
 
-
-
 .content__text {
     margin-bottom: 16px;
     margin-left: 16px;
@@ -255,13 +253,16 @@ body {
     .content__article {
         display: flex;
         flex-direction: row;
+        align-items:flex-start;
     }
     .content__full-text {
         display: block;
     }
     .content__topic-img {
+        margin-top: 15px;
         width: 360px;
         height: 208px;
+        border-radius: 15px;
     }
 }
 
@@ -301,5 +302,8 @@ body {
     .content__large-menu img {
         margin-left: 8px;
         margin-right: 32px;
+    }
+    .content__article {
+        align-items: flex-start;
     }
 }
