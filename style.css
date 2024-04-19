@@ -110,10 +110,6 @@ button {
     margin-right: 16px;
 } 
 
-.header__right-mob--ext {
-    display: none;
-}
-
 .header__hidden-txt {
     display: none;
 }
@@ -340,5 +336,8 @@ button {
         display: flex;
         font-size: 16px;
         font-weight: 600;
+    }
+    .header__right-mob {
+        gap: 8px;
     }
 }
