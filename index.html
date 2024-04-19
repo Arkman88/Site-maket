@@ -8,37 +8,39 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__left">           
-            <div class="header__left-burger">
-                <img src="images/burger.svg" alt="">
-            </div>
-            <div class="header__left-divider">
+        <ul class="header__left">           
+            <li class="header__left-burger">
+                <button><img src="images/burger.svg" alt=""></button>
+            </li>
+            <li class="header__left-divider">
                 <img src="images/divider.svg" alt="">
-            </div>
-            <div class="header__left-logo">
+            </li>
+            <li class="logo">
                 <img src="images/logo.svg" alt="">
-            </div>
-        </div>
-        <div class="header__right">
-            <div class="header__right-call">
-                <img src="images/call.svg" alt="">
-            </div>
-            <div class="header__right-chat">
-                 <img src="images/chat.svg" alt="">
-            </div>
-            <div class="header__right-profile">
-                <img src="images/profile.svg" alt="">
-            </div>
-            <div class="header__right-divider">
-                <img src="images/divider.svg" alt="">
-            </div>
-            <div class="header__right-tools">
-                <img src="images/tools.svg" alt="">
-            </div>
-            <div class="header__right-search">
-                <img src="images/search.svg" alt="">
-            </div>
-        </div>
+            </li>
+        </ul>
+        <ul class="header__right-pad">
+            <li class="header__right-call">
+                <button><img src="images/call.svg" alt=""></button>
+            </li>
+            <li class="header__right-chat">
+                <button><img src="images/chat.svg" alt=""></button>
+            </li>
+            <li class="header__right-profile">
+                <button><img src="images/profile.svg" alt=""></button>
+            </li>
+        </ul>
+        <ul class="header__right-mob">
+            <li class="header__right-divider">
+                <button><img src="images/divider.svg" alt=""></button>
+            </li>
+            <li class="header__right-tools">
+                <button><img src="images/tools.svg" alt=""></button>
+            </li>
+            <li class="header__right-search">
+                <button><img src="images/search.svg" alt=""></button>
+            </li>
+        </ul>
     </header>
     <main>
         <div class="content">
@@ -52,15 +54,17 @@
                     <span>Статус ремонта</span><img src="images/search.svg" alt="">
                 </div>
             </div>
-            <div class="content__menu">
+            <nav class="content__menu">
                 <a href="#">Ремонтируемые устройства</a>
                 <a href="#">Ремонтируемые бренды</a>
                 <a href="#">Цены на услуги</a>
                 <a href="#">Адреса сервисных центров</a>
                 <a href="#">Специальные цены</a>
                 <a class="content__feedback-menu" href="#">Отзывы</a>
-            </div>
-            <span class="content__feedback"><a>Oтзывы</a></span>
+            </nav>
+            <nav class="content__feedback">
+                <a>Oтзывы</a>
+            </nav>
             <article class="content__article">
                 <div class="content__text">                    
                     <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
@@ -71,17 +75,14 @@
                             Мы гордимся тем, что к нам обращаются по рекомендациям и, 
                             в свою очередь, советуют нас родным и близким.</span></p>
                     </div>       
-                    <div class="content__button">
+                    <button class="content__button">
                         <img class="content__expand-img" src="images/expand.svg" alt="">
                         <span class="content__read-more" >Читать далее</span> 
-                    </div>              
-                </div>
-                
-                <div><img class="content__topic-img" src="images/topic-image.png" alt="изображение логотипа компании CPS"></div>
-                
+                    </button>              
+                </div>                
+                <img class="content__topic-img" src="images/topic-image.png" alt="изображение логотипа компании CPS">                
             </article>
         </div>
-    </main>
-    
+    </main>    
 </body>
 </html>
