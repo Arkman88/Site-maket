@@ -291,9 +291,7 @@ button {
     }
     .header {
         box-shadow: none;
-        position: absolute;
-        right: 32px;
-        top: 42px;
+
     }
     .header__left {
         display: none;
@@ -339,9 +337,5 @@ button {
     }
     .header__right-mob {
         gap: 8px;
-    }
-    .help {
-        display: flex;
-        flex-direction: row;
     }
 }
