@@ -257,6 +257,9 @@ button {
     display: none;
 }
 
+.content .header__right-mob {
+    display: none;
+}
 @media (min-width: 600px) {
     .header__left-divider {
         display: block;
@@ -282,6 +285,8 @@ button {
     }
 }
 
+
+
 @media (min-width: 1000px) {
     body {        
         max-width: 1200px;
@@ -290,8 +295,7 @@ button {
         margin-right: auto;
     }
     .header {
-        box-shadow: none;
-
+        display: none;   
     }
     .header__left {
         display: none;
@@ -338,4 +342,6 @@ button {
     .header__right-mob {
         gap: 8px;
     }
+    .content .header__right-mob {
+        display: flex;
 }
