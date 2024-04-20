@@ -32,6 +32,7 @@ button {
     justify-content: space-between;
     align-items: center;    
     height: 88px; 
+    background-color: #fff;
     box-shadow: 0 1px 0 #D9FFF5;
 }
 
