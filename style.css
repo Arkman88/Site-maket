@@ -165,7 +165,8 @@ button {
     align-items: center;
     white-space: nowrap;
     color: #7E7E82;
-    margin-left: 16;
+    margin-left: 16px;
+    margin-right: 16px;
     overflow-x:scroll;
     gap: 16px;   
     height: 80px; 
