@@ -320,7 +320,7 @@ button {
         display: inline;
     }
     .content__large-bar {
-        margin-top: 42px;
+        margin-top: 24px;
     }
     .content__large-menu img {
         margin-left: 8px;
@@ -339,5 +339,9 @@ button {
     }
     .header__right-mob {
         gap: 8px;
+    }
+    .help {
+        display: flex;
+        flex-direction: row;
     }
 }
