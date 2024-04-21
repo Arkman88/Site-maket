@@ -14,14 +14,12 @@ body {
     padding: 0;
     background-color: #F8F8F8;
     min-width: 320px;
-
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 button {
@@ -56,15 +54,13 @@ button:hover, button:active {
 .header__left {
     display: flex;
     justify-content: flex-start;
-    align-items: center;  
-    
+    align-items: center;      
 }
 
 .header__left-burger {
     width: 40px;
     height: 40px;
-    margin-left: 16px;
-    
+    margin-left: 16px;    
 } 
 
 .header__left-divider {
@@ -79,8 +75,6 @@ button:hover, button:active {
     height: 50.81px;
     margin-left: 20px;
 }
-
-
 
 .header__right-pad {
     display: none;
@@ -294,8 +288,6 @@ button:hover, button:active {
     }
 }
 
-
-
 @media (min-width: 1050px) {
     body {        
         max-width: 1150px;
@@ -331,8 +323,7 @@ button:hover, button:active {
     }
     .content__article {
         align-items: flex-start;
-    }
-  
+    }  
     .content .header__right-mob {
         display: flex;
         align-items:center ;
