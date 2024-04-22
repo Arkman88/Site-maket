@@ -28,11 +28,8 @@ button {
 }
 
 button:hover, button:active {
-  /*  box-shadow: 1px 1px 5px 3px #B8FFEC;
-    border-radius: 5px;
-    background-color: #fff;
-    */
-    filter: hue-rotate(200deg);
+    transform: scale(1.2);
+    transition-duration: 0.6s;
   
 }
 
