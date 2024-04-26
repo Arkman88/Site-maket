@@ -408,7 +408,31 @@
     
 }
 
+.button-alt-search {
+    background: url(images/alt-search.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;  
+}
+
 .menu__logo {
     margin-left: 16px;
 }
 
+.menu__list li {
+    margin-bottom: 32px;
+    margin-left: 24px;
+    color: #1B1C21;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.menu__list a{
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+/*
+.menu__list a, .menu__list a:visited, .menu__list a:disabled {
+    foo
+} */
