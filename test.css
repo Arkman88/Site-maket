@@ -48,19 +48,18 @@
 .button-clear {
     border: none;
     background: none;
-    width: 40px;
-    height: 40px;
 }
 
 .button--hover:hover, .button--hover:active {
-    transform: scale(1.1);
     opacity: 0.5;
-    transition-duration: 1s;  
+    transition-duration: 0.2s;  
 }
 
 .button-burger {
     background: url(images/burger.svg) no-repeat;  
-    margin-left: 16px;   
+    margin-left: 16px;  
+    width: 40px;
+    height: 40px; 
 }
 
 .logo {
@@ -80,16 +79,22 @@
 .button-call {
     background: url(images/call.svg) no-repeat;
     margin-right: 16px;
+    width: 40px;
+    height: 40px;
 }
 
 .button-chat {
     background: url(images/chat.svg) no-repeat;
     margin-right: 16px;
+    width: 40px;
+    height: 40px;
 }
 
 .button-profile {
     background: url(images/profile.svg) no-repeat;
     margin-right: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .header__right-mob {
@@ -101,6 +106,8 @@
 .button-tools {
     background: url(images/tools.svg) no-repeat;
     margin-right: 16px;
+    width: 40px;
+    height: 40px;
 } 
 
 .button-tools::after {
@@ -114,6 +121,8 @@
 .button-search {
     background: url(images/search.svg) no-repeat;
     margin-right: 16px;
+    width: 40px;
+    height: 40px;
 } 
 
 /* Основное */
@@ -285,7 +294,7 @@
         width: 360px;
         height: 208px;
         border-radius: 15px;
-    }
+    }    
 }
 
 @media (min-width: 1050px) {
@@ -359,3 +368,48 @@
         margin-left: 34px;
     }
 }
+
+
+.menu {
+    margin-right: auto;
+    padding: 0;
+    width: 320px;
+    height: 1024px;
+    background-color: #fff;
+    box-shadow: 16px 0 35px 0 rgba(14, 24, 80, 0.2);
+    
+}
+
+.menu__name-txt {
+    font-family: "TTLakes";
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7E7E82;
+}
+
+.menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu__header-list {
+    display: flex;
+    align-items: center;    
+    height: 88px;
+}
+
+.button-alt-burger {
+    background: url(images/alt_burger.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-left: 24px;
+    
+}
+
+.menu__logo {
+    margin-left: 16px;
+}
+
