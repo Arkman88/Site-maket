@@ -497,12 +497,7 @@
     font-weight: 600;
 }
 
-.footer__language--active a {
-    color: #7E7E82;
-}
-
 .footer__language a:hover, .footer__language a:active, .footer__language a:focus{
-    opacity: 0.5;
-    transition-duration: 0.2s;  
+    color: #7E7E82;
 } 
 
