@@ -424,14 +424,11 @@
     margin-left: 16px;
 }
 
-<<<<<<< HEAD
 .menu__logo a:hover, .menu__logo a:active, .menu__logo a:focus{
     opacity: 0.6;
     transition-duration: 0.5s;
 } 
 
-=======
->>>>>>> 34592c299873f4d8bbb34be63403488ef8255126
 .menu__list li {
     margin-bottom: 32px;
     margin-left: 24px;
@@ -493,14 +490,11 @@
     margin-top: 12px;
 }
 
-<<<<<<< HEAD
 .footer__mail a, .footer__phone a {
     color: #1B1C21;
     text-decoration: none;
 }
 
-=======
->>>>>>> 34592c299873f4d8bbb34be63403488ef8255126
 .footer__language {
     display: flex;
     gap: 7px;
@@ -517,11 +511,7 @@
     color: #7E7E82;
 } 
 
-<<<<<<< HEAD
 .footer__mail a:hover, .footer__mail a:active, .footer__mail a:focus, 
 .footer__phone a:hover, .footer__phone a:active, .footer__phone a:focus{
     color: #7E7E82;
 } 
-
-=======
->>>>>>> 34592c299873f4d8bbb34be63403488ef8255126
