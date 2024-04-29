@@ -8,27 +8,16 @@
 </head>
 <body class="body">
     <div class="menu">
-        <header class="menu__header">
-            <ul class="menu__header-list no-select ul-clear">           
-                <li class="menu__burger">
-                    <button class=" button-alt-burger button--hover button-clear"></button>
-                </li>            
-                <li class="menu__logo">
-                    <a href="#" alt="логотип компании CPS">
-                        <div class="logo"></div>
-                    </a>
-                </li>   
-            </ul>             
-            <button class="button-alt-search button--hover button-clear"></button>
-             
+        <header class="menu__header">          
+            <button class="menu__burger button-alt-burger button--hover button-clear"></button>
+            <a class="logo menu__logo" href="#">
+                <img src="images/logo.svg" alt="Логотип компании">
+            </a>                            
+            <button class="button-alt-search button--hover button-clear"></button>             
         </header>
         <main class="menu__main">
-
-            <div class="menu__bar">
-                <div class="menu__name">
-                    <img class="menu__img" src="images/highlight.svg" alt="">
-                    <h1 class="menu__name-txt">Ремонт техники</h1>
-                </div>
+            <div class="menu__name">
+                <h1 class="menu__name-txt">Ремонт техники</h1>
             </div>
             <nav class="menu__nav">
                 <ul class="menu__list no-select ul-clear">
@@ -54,12 +43,14 @@
                     <button class="button-profile button--hover button-clear"></button>
                 </li>
             </ul>
-            <div class="footer__mail"><a href="mailto: mail@cps.com">mail@cps.com</a>
-            <div class="footer__phone"><a href="tel: 88008908900">8 800 890 8900</a></div>
+            <address footer__address>
+                <a class="footer__mail" href="mailto: mail@cps.com">mail@cps.com</a><br>
+                <a class="footer__phone" href="tel: 88008908900">8 800 890 8900</a>
+            </address>
             <ul class="footer__language  ul-clear">
-                <li><a href="#">RU</a></li>
-                <li><a href="#">EN</a></li>
-                <li><a href="#">CH</a></li>
+                <li ><a class="footer__ru" href="#">RU</a></li>
+                <li ><a class="footer__en" href="#">EN</a></li>
+                <li ><a class="footer__ch" href="#">CH</a></li>
             </ul>
         </footer> 
     </div>   

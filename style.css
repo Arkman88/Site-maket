@@ -63,7 +63,6 @@
 }
 
 .logo {
-    background: url(images/logo.svg) no-repeat;
     width: 96.55px;
     height: 50.81px;    
 }
@@ -396,13 +395,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 18px;
+    margin-bottom: 46px;
 
-}
-
-.menu__header-list {
-    display: flex;
-    align-items: center;    
-    height: 88px;
 }
 
 .button-alt-burger {
@@ -418,13 +413,14 @@
     width: 40px;
     height: 40px;
     margin-right: 16px;  
+    margin-left: auto;
 }
 
 .menu__logo {
     margin-left: 16px;
 }
 
-.menu__logo a:hover, .menu__logo a:active, .menu__logo a:focus{
+.menu__logo:hover, .menu__logo:active, .menu__logo:focus{
     opacity: 0.6;
     transition-duration: 0.5s;
 } 
@@ -448,18 +444,17 @@
     transition-duration: 0.2s;  
 } 
 
-.menu__bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .menu__name {
     display: flex;
-    align-items: center;
-    margin-bottom: 24px;
     width: 390px;
     height: 40px;
+    margin-bottom: 32px;
+}
+
+.menu__name::before {
+    content: url(images/highlight.svg);
+    width: 4px;
+    height: 32px;    
 }
 
 .menu__img {
@@ -468,6 +463,8 @@
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
     margin-left: 24px;
     margin-top: auto;
     margin-bottom: 20px;
@@ -476,23 +473,31 @@
 
 .footer__menu {
     display: flex;
+    margin-bottom: 16px;
+}
+
+.footer__address {
+    
+    
 }
 
 .footer__mail {
-    font-weight: 5s00;
-    margin-top: 16px;
+    display: inline-block;
+    text-decoration: none;
+    
+    font-style: normal;
+    color: #1B1C21;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 .footer__phone {
-    font-size: 24px;
+    font-size: 24px;    
+    font-style: normal;
+    text-decoration: none;
+    color: #1B1C21;
     font-family: "TTLakes-bold";
     font-weight: 900;
-    margin-top: 12px;
-}
-
-.footer__mail a, .footer__phone a {
-    color: #1B1C21;
-    text-decoration: none;
 }
 
 .footer__language {
@@ -501,17 +506,19 @@
     margin-top: 40px;
 }
 
-.footer__language a {
+.footer__ru, .footer__en, .footer__ch {
     text-decoration: none;
     color: #1B1C21;
     font-weight: 600;
 }
 
-.footer__language a:hover, .footer__language a:active, .footer__language a:focus{
+.footer__ru:hover, .footer__ru:active, .footer__ru:focus, 
+.footer__en:hover, .footer__en:active, .footer__en:focus,
+.footer__ch:hover, .footer__ch:active, .footer__ch:focus {
     color: #7E7E82;
 } 
 
-.footer__mail a:hover, .footer__mail a:active, .footer__mail a:focus, 
-.footer__phone a:hover, .footer__phone a:active, .footer__phone a:focus{
+.footer__mail:hover, .footer__mail:active, .footer__mail:focus, 
+.footer__phone:hover, .footer__phone:active, .footer__phone:focus{
     color: #7E7E82;
 } 
