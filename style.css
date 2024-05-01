@@ -425,7 +425,7 @@
     transition-duration: 0.5s;
 } 
 
-.menu__list li {
+.menu__item {
     margin-bottom: 32px;
     margin-left: 24px;
     color: #1B1C21;
@@ -433,13 +433,13 @@
     line-height: 24px;
 }
 
-.menu__list a{
+.menu__link{
     text-decoration: none;
     color: #1B1C21;
 }
 
 
-.menu__list a:hover, .menu__list a:active, .menu__list a:focus{
+.menu__link:hover, .menu__link:active, .menu__link:focus{
     opacity: 0.5;
     transition-duration: 0.2s;  
 } 
@@ -499,15 +499,13 @@
     margin-top: 40px;
 }
 
-.footer__ru, .footer__en, .footer__ch {
+.footer__lng-link {
     text-decoration: none;
     color: #1B1C21;
     font-weight: 600;
 }
 
-.footer__ru:hover, .footer__ru:active, .footer__ru:focus, 
-.footer__en:hover, .footer__en:active, .footer__en:focus,
-.footer__ch:hover, .footer__ch:active, .footer__ch:focus {
+.footer__lng-link:hover, .footer__lng-link:active, .footer__lng-link:focus {
     color: #7E7E82;
 } 
 
