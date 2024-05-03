@@ -50,7 +50,7 @@
     background: none;
 }
 
-.button--hover:hover, .button--hover:active {
+.button--hover:hover, .button--hover:active, .button--hover:focus {
     opacity: 0.5;
     transition-duration: 0.2s;  
 }
