@@ -45,21 +45,25 @@
     align-items: center;      
 }
 
-.button-clear {
-    border: none;
-    background: none;
+.button {
+    width: 40px;
+    height: 40px;
+    border: 0px solid;
+    background-color: #FF3E79;
+    background-position: center;    
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
-.button--hover:hover, .button--hover:active {
+.button:hover, .button:active, button:focus {
     opacity: 0.5;
     transition-duration: 0.2s;  
 }
 
 .button-burger {
-    background: url(images/burger.svg) no-repeat;  
+    background-image: url(images/burger.svg); 
     margin-left: 16px;  
-    width: 40px;
-    height: 40px; 
+     
 }
 
 .logo {
@@ -76,24 +80,18 @@
 }
 
 .button-call {
-    background: url(images/call.svg) no-repeat;
+    background-image: url(images/call.svg);
     margin-right: 16px;
-    width: 40px;
-    height: 40px;
 }
 
 .button-chat {
-    background: url(images/chat.svg) no-repeat;
+    background-image: url(images/chat.svg);
     margin-right: 16px;
-    width: 40px;
-    height: 40px;
 }
 
 .button-profile {
-    background: url(images/profile.svg) no-repeat;
+    background-image: url(images/profile.svg);
     margin-right: 30px;
-    width: 40px;
-    height: 40px;
 }
 
 .header__right-mob {
@@ -103,10 +101,8 @@
 }
 
 .button-tools {
-    background: url(images/tools.svg) no-repeat;
+    background-image: url(images/tools.svg);
     margin-right: 16px;
-    width: 40px;
-    height: 40px;
 } 
 
 .button-tools::after {
@@ -118,10 +114,8 @@
 }
 
 .button-search {
-    background: url(images/search.svg) no-repeat;
+    background-image: url(images/search.svg);
     margin-right: 16px;
-    width: 40px;
-    height: 40px;
 } 
 
 /* Основное */
@@ -238,6 +232,11 @@
     background: none;
     height: 24px;  
     margin-bottom: 16px;
+}
+
+.content__button:hover, .content__button:active, .content__button:focus {
+    opacity: 0.5;
+    transition-duration: 0.2s;  
 }
 
 .content__expand-img {
@@ -401,17 +400,13 @@
 }
 
 .button-alt-burger {
-    background: url(images/alt_burger.svg) no-repeat;
-    width: 40px;
-    height: 40px;
+    background-image: url(images/alt_burger.svg);
     margin-left: 24px;
     
 }
 
 .button-alt-search {
-    background: url(images/alt-search.svg) no-repeat;
-    width: 40px;
-    height: 40px;
+    background-image: url(images/alt-search.svg);
     margin-right: 16px;  
     margin-left: auto;
 }
