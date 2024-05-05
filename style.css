@@ -528,7 +528,7 @@ Swiper menu etc...
 }
 
 .swiper__header { 
-    margin-left: 16px;
+    padding-left: 16px;
     font-family: "TTLakes";
     text-transform: uppercase;
     align-content: center;
@@ -539,7 +539,7 @@ Swiper menu etc...
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
-.mySwiper {
+.swiper__container {
     display: none;
     max-width: 600px;
     height: 100px;
@@ -606,7 +606,7 @@ Swiper menu etc...
     background: url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
-.swiper__button {
+.button-link {
     background: url(images/brends/brand-link.svg) no-repeat center;
     width: 40px; 
     height: 40px;
@@ -615,6 +615,44 @@ Swiper menu etc...
     border-radius: 50%;
 }
 
+.button-link:hover, .button-link:active, .button-link:focus {
+    opacity: 0.5;
+    transition-duration: 0.2s;  
+}
+
+.swiper__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+    border: 1px solid black;
+    height: 170px;
+    overflow: hidden;
+}
+
+.button-show-more {
+    display: flex;
+    align-items: center; 
+    border: none;
+    background: none;
+    width: 134px;
+    height: 24px;
+    
+}
+.button-show-more::before {
+    content: url(images/expand.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.button-show-more:hover, .button-show-more:active, .button-show-more:focus {
+    opacity: 0.5;
+    transition-duration: 0.2s;  
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px){
-     .mySwiper { display: block; }
+     .swiper__container { display: block; }
+     .swiper__menu { display: none;}
 }
