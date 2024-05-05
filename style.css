@@ -527,13 +527,14 @@ Swiper menu etc...
     gap: 16px;
 }
 
-.swiper__header {
-    border: 1px solid black;
+.swiper__header { 
     margin-left: 16px;
     font-family: "TTLakes";
     text-transform: uppercase;
     align-content: center;
     font-size: 16px;
+    color: #7E7E82;
+    font-weight: 600;
     height: 80px;
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
@@ -548,30 +549,17 @@ Swiper menu etc...
     padding: 2px;
 }
 
-swiper-slide {
+.swiper__slide { 
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     border: 1px solid #EAEAEA;
-    border-radius: 6px;
-}
-
-
-.swiper__slide {    
+    border-radius: 6px;   
     width: 240px !important;
     height: 70px;
-}
-
-.swiper__button {
-    background: url(images/brends/brand-link.svg) no-repeat center;
-    width: 40px; 
-    height: 40px;
-    margin-right: 16px;
-    border: 2px solid #FF3E79;
-    border-radius: 50%;
 }
 
 .swiper__slide:nth-child(1) {
@@ -618,6 +606,15 @@ swiper-slide {
     background: url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+.swiper__button {
+    background: url(images/brends/brand-link.svg) no-repeat center;
+    width: 40px; 
+    height: 40px;
+    margin-right: 16px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px){
      .mySwiper { display: block; }
 }
