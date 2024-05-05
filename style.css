@@ -639,6 +639,7 @@ Swiper menu etc...
     background: none;
     width: 134px;
     height: 24px;
+    margin-left: 30px;
     
 }
 .button-show-more::before {
@@ -655,4 +656,5 @@ Swiper menu etc...
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px){
      .swiper__container { display: block; }
      .swiper__menu { display: none;}
+     .button-show-more { display: none;}
 }
