@@ -288,12 +288,17 @@
     .content__full-text {
         display: block;
     }
+
+    .content__text-more-btn {
+        display: none;
+    }
+
     .content__topic-img {
         margin-top: 15px;
         width: 360px;
         height: 208px;
         border-radius: 15px;
-    }    
+    } 
 }
 
 @media (min-width: 1050px) {
@@ -366,6 +371,7 @@
     .content__menu li:nth-child(6) {
         margin-left: 34px;
     }
+    
 }
 
 
@@ -509,3 +515,105 @@
 .footer__phone:hover, .footer__phone:active, .footer__phone:focus{
     color: #7E7E82;
 } 
+
+
+/* 
+Swiper menu etc...
+*/
+
+.swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.swiper__header {
+    border: 1px solid black;
+    margin-left: 16px;
+    text-transform: capitalize;
+    font-size: 16px;
+    height: 80px;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.mySwiper {
+    max-width: 600px;
+    height: 100px;
+    margin-right: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+
+.swiper__slide {    
+    width: 240px !important;
+    height: 70px;
+}
+
+.swiper__button {
+    background: url(images/brends/brand-link.svg) no-repeat center;
+    width: 40px; 
+    height: 40px;
+    margin-right: 16px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+}
+
+.swiper__slide:nth-child(1) {
+    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(2) {
+    background: url(images/brends/apple.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(3) {
+    background: url(images/brends/bosh.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(4) {
+    background: url(images/brends/hp.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(5) {
+    background: url(images/brends/lenovo.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(6) {
+    background: url(images/brends/samsung.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(7) {
+    background: url(images/brends/sony.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(8) {
+    background: url(images/brends/view.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(9) {
+    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(10) {
+    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+}
+
+.swiper__slide:nth-child(111) {
+    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+     .mySwiper { display: block; }
+}
