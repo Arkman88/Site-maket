@@ -530,18 +530,22 @@ Swiper menu etc...
 .swiper__header {
     border: 1px solid black;
     margin-left: 16px;
-    text-transform: capitalize;
+    font-family: "TTLakes";
+    text-transform: uppercase;
+    align-content: center;
     font-size: 16px;
     height: 80px;
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 
 .mySwiper {
+    display: none;
     max-width: 600px;
     height: 100px;
     margin-right: 0px;
     margin-left: 16px;
     margin-right: 16px;
+    padding: 2px;
 }
 
 swiper-slide {
@@ -610,7 +614,7 @@ swiper-slide {
     background: url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
-.swiper__slide:nth-child(111) {
+.swiper__slide:nth-child(11) {
     background: url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
