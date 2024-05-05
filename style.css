@@ -239,7 +239,8 @@
     transition-duration: 0.2s;  
 }
 
-.content__expand-img {
+.content__button::before {
+    content: url(images/expand.svg);
     width: 24px;
     height: 24px;
 }
