@@ -370,10 +370,8 @@
     }
     .content__menu li:nth-child(6) {
         margin-left: 34px;
-    }
-    
+    }    
 }
-
 
  /*
  Страница меню
@@ -536,7 +534,8 @@ Swiper menu etc...
     color: #7E7E82;
     font-weight: 600;
     height: 80px;
-    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(90deg, #F8F8F8, #FFFFFF);
+    
 }
 
 .swiper__container {
@@ -551,8 +550,7 @@ Swiper menu etc...
 
 .swiper__slide { 
     text-align: center;
-    font-size: 18px;
-    background: #FFFFFF;
+    font-size: 18px;    
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -563,47 +561,47 @@ Swiper menu etc...
 }
 
 .swiper__slide:nth-child(1) {
-    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(2) {
-    background: url(images/brends/apple.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/apple.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(3) {
-    background: url(images/brends/bosh.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/bosh.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(4) {
-    background: url(images/brends/hp.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/hp.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(5) {
-    background: url(images/brends/lenovo.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/lenovo.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(6) {
-    background: url(images/brends/samsung.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/samsung.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(7) {
-    background: url(images/brends/sony.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/sony.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(8) {
-    background: url(images/brends/view.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/view.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(9) {
-    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(10) {
-    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
 .swiper__slide:nth-child(11) {
-    background: url(images/brends/acer.svg) no-repeat 10% 50%;
+    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
 }
 
 .button-link {
@@ -627,25 +625,22 @@ Swiper menu etc...
     padding-left: 30px;
     padding-right: 30px;
     gap: 30px;
-    border: 1px solid black;
-    height: 170px;
+    height: 175px;
     overflow: hidden;
 }
 
 .button-show-more {
     display: flex;
     align-items: center; 
+    padding-left: 25px;
     border: none;
     background: none;
-    width: 134px;
+    width: 124px;
     height: 24px;
     margin-left: 30px;
+    background-image: url(images/expand.svg);
+    background-repeat: no-repeat;
     
-}
-.button-show-more::before {
-    content: url(images/expand.svg);
-    width: 24px;
-    height: 24px;
 }
 
 .button-show-more:hover, .button-show-more:active, .button-show-more:focus {
@@ -653,7 +648,8 @@ Swiper menu etc...
     transition-duration: 0.2s;  
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 600px){
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 600px){
      .swiper__container { display: block; }
      .swiper__menu { display: none;}
      .button-show-more { display: none;}
