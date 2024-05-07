@@ -556,52 +556,55 @@ Swiper menu etc...
     align-items: center;
     border: 1px solid #EAEAEA;
     border-radius: 6px;   
-    width: 240px !important;
+    width: 240px;
     height: 70px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-color: #ffffff;
 }
 
 .swiper__slide:nth-child(1) {
-    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/acer.svg);
 }
 
 .swiper__slide:nth-child(2) {
-    background: #FFFFFF url(images/brends/apple.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/apple.svg);
 }
 
 .swiper__slide:nth-child(3) {
-    background: #FFFFFF url(images/brends/bosh.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/bosh.svg);
 }
 
 .swiper__slide:nth-child(4) {
-    background: #FFFFFF url(images/brends/hp.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/hp.svg);
 }
 
 .swiper__slide:nth-child(5) {
-    background: #FFFFFF url(images/brends/lenovo.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/lenovo.svg);
 }
 
 .swiper__slide:nth-child(6) {
-    background: #FFFFFF url(images/brends/samsung.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/samsung.svg);
 }
 
 .swiper__slide:nth-child(7) {
-    background: #FFFFFF url(images/brends/sony.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/sony.svg);
 }
 
 .swiper__slide:nth-child(8) {
-    background: #FFFFFF url(images/brends/view.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/view.svg);
 }
 
 .swiper__slide:nth-child(9) {
-    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/acer.svg);
 }
 
 .swiper__slide:nth-child(10) {
-    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/acer.svg);
 }
 
 .swiper__slide:nth-child(11) {
-    background: #FFFFFF url(images/brends/acer.svg) no-repeat 10% 50%;
+    background-image: url(images/brends/acer.svg);
 }
 
 .button-link {
@@ -649,7 +652,7 @@ Swiper menu etc...
 }
 
 
-@media only screen and (min-device-width : 200px) and (max-device-width : 600px){
+@media only screen and (max-device-width : 600px){
      .swiper__container { display: block; }
      .swiper__menu { display: none;}
      .button-show-more { display: none;}
