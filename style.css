@@ -1114,14 +1114,22 @@ Swiper menu etc...
     align-items: flex-start;
   }
   
+<<<<<<< HEAD
   .header-swiper { 
+=======
+  .header { 
+>>>>>>> 5ebababf8a1f35ea94e63ac011b314b584eb464c
     padding-left: 16px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, #F8F8F8, #FFFFFF);
   }
   
+<<<<<<< HEAD
   .header-swiper__h {
+=======
+  .header__h {
+>>>>>>> 5ebababf8a1f35ea94e63ac011b314b584eb464c
     font-family: "TTLakes";
     text-transform: uppercase;
     font-size: 16px;
