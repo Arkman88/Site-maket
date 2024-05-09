@@ -3,47 +3,32 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Swiper-Slider</title>
+    <title>Swiper/Slider</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="script.js"></script>
 </head>
-
-<body class="body">
-    <div class="swiper">
-        <header class="swiper__header">Ремонт техники различных брендов</header>
-        <swiper-container class="swiper__container" space-between="30" slides-per-view="auto" pagination="true" pagination-clickable="true">
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-            <swiper-slide class="swiper__slide"><button class="button-link"></button></swiper-slide>
-        </swiper-container>
-        <div class="swiper__menu">
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
-            <div class="swiper__slide"><button class="button-link"></button></div>
+<body class="">
+    <header class="content__header"><h1 class="content__h">Ремонт техники различных брендов</h1></header>
+    <div class="content">    
+        <div class="swiper">
+            <ul class="swiper-wrapper ul-clear">
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+                <li class="swiper-slide"><button class="button-link"></button></li>
+            </ul>
+            <div class="swiper-pagination"></div>      
         </div>
         <button onclick="readMore()" class="button-show-more">Показать всё</button>
     </div>
-
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
 </body>
-
 </html>
