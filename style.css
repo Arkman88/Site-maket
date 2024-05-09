@@ -1143,7 +1143,6 @@ Swiper menu etc...
     border: 1px solid #EAEAEA;
     border-radius: 6px;   
     width: 240px;
-    width: 240px;
     height: 70px;
     background-repeat: no-repeat;
     background-position: 20% 50%;
@@ -1167,7 +1166,7 @@ Swiper menu etc...
 }
 
 .swiper-slide:nth-child(5) {
-background-image: url(images/brends/lenovo.svg);
+    background-image: url(images/brends/lenovo.svg);
 }
 
 .swiper-slide:nth-child(6) {
@@ -1241,7 +1240,7 @@ background-image: url(images/brends/lenovo.svg);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 16px;     
+        gap: 30px;     
         height: 173px;      
         margin-bottom: 10px;
         overflow: hidden;

@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
       '(max-width: 768px)',
       '.swiper',
       {
-        spaceBetween: 30,
+        spaceBetween: 20,
         slidesPerView: 'auto',
         pagination: {
           el: '.swiper-pagination',
