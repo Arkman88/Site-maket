@@ -1167,7 +1167,7 @@ Swiper menu etc...
 }
 
 .swiper-slide:nth-child(5) {
-background-image: url(images/brends/lenovo.svg);
+    background-image: url(images/brends/lenovo.svg);
 }
 
 .swiper-slide:nth-child(6) {
