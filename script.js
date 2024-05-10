@@ -13,9 +13,7 @@ function readMore() {
         btn.innerHTML = "Показать всё";
         btn.style.background = 'url(images/expand.svg) no-repeat'
     }
-  }
-
-  
+  }  
 
 window.addEventListener('DOMContentLoaded', () => {
     const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {
