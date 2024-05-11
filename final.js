@@ -1,4 +1,4 @@
-function readMore() {
+/* function readMore() {
     let more = document.querySelector(".swiper-wrapper");
     let btn = document.querySelector(".button-show-more");
     if (more.style.overflow !== "visible" ) {
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
     );
   });
 
-/*
+
   dialog style="padding: 0">
   <div id="modal-box" style="padding: 1rem">
   <div>Modal content</div>
@@ -88,3 +88,23 @@ if (isModalOpen && !modalBox.contains(e.target)) {
 })
 
 */
+
+let menu = document.querySelector('.menu');
+let openMenuButton = document.querySelector('.button-burger');
+let closeMenuButton = menu.querySelector('.button-alt-burger');
+let main = document.querySelector('.main');
+let header = document.querySelector('.header');
+
+openMenuButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    menu.classList.add('menu--show');
+    main.classList.add('blur');
+    header.classList.add('blur');
+});
+
+closeMenuButton.addEventListener('click', function() {
+
+    menu.classList.remove('menu--show');
+    main.classList.remove('blur');
+    header.classList.remove('blur');
+});
