@@ -266,16 +266,20 @@
 /*
  Страница меню
  */
- .menu {
-    display: none;
+ #menu {
     flex-direction: column;
+    margin: 0;
     margin-right: auto;
     padding: 0;
     width: 320px;
     min-height: 100vh;
-    background-color: #fff;
-    box-shadow: 16px 0 35px 0 rgba(14, 24, 80, 0.2);    
-    z-index: 100;
+    background-color: #fff; 
+    border: none;
+    overflow: visible;
+}
+
+#menu::backdrop {
+    backdrop-filter: blur(10px);
 }
 
 .menu__name-txt {
@@ -337,7 +341,7 @@
 
 .menu__name {
     display: flex;
-    width: 390px;
+    width: 300px;
     height: 40px;
     margin-bottom: 32px;
 }
@@ -551,17 +555,6 @@ Swiper menu etc...
     }
 }
 
-@media screen and (max-width: 1050px){
-    .menu--show {
-        display: flex;
-        position: absolute;
-        top: 0;
-    }    
-    .blur {
-        filter: blur(10px);
-    }
-}
-
 @media (min-width: 600px) {
     .button-burger::after {
         content: url(images/divider.svg);
@@ -678,8 +671,10 @@ Swiper menu etc...
         margin-right: auto;
         align-self: baseline;
     }
-    .menu{
+    #menu{
         display: flex;
+        position: static;
+        border: none;
         max-height: 900px;
         box-shadow: none;
     }

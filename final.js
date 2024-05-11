@@ -54,41 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
     );
   });
 
-
-  dialog style="padding: 0">
-  <div id="modal-box" style="padding: 1rem">
-  <div>Modal content</div>
-  <button id="close-modal-btn">Close</button>
-</div>
-</dialog>
-<button id="show-modal-btn">Show modal</button>
-
-const modal = document.querySelector('dialog')
-const modalBox = document.getElementById('modal-box')
-const showModalBtn = document.getElementById('show-modal-btn')
-const closeModalBtn = document.getElementById('close-modal-btn')
-
-let isModalOpen = false
-
-showModalBtn.addEventListener('click', (e) => {
-modal.showModal()
-isModalOpen = true
-e.stopPropagation()
-})
-
-closeModalBtn.addEventListener('click', () => {
-modal.close()
-isModalOpen = false
-})
-
-document.addEventListener('click', (e) => {
-if (isModalOpen && !modalBox.contains(e.target)) {
-  modal.close()
-}
-})
-
 */
-
+/*
 let menu = document.querySelector('.menu');
 let openMenuButton = document.querySelector('.button-burger');
 let closeMenuButton = menu.querySelector('.button-alt-burger');
@@ -102,9 +69,22 @@ openMenuButton.addEventListener('click', function (evt) {
     header.classList.add('blur');
 });
 
-closeMenuButton.addEventListener('click', function() {
 
+
+
+closeMenuButton.addEventListener('click', function() {
     menu.classList.remove('menu--show');
     main.classList.remove('blur');
     header.classList.remove('blur');
+    isClick = false;
 });
+
+document.addEventListener('keydown', (evt) =>{
+    if (evt.key = 'Escape') {
+        menu.classList.remove('menu--show');
+        main.classList.remove('blur');
+        header.classList.remove('blur');
+        isClick = false;
+    }
+})
+*/
