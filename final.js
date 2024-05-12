@@ -1,4 +1,4 @@
-/* function readMore() {
+ function readMore() {
     let more = document.querySelector(".swiper-wrapper");
     let btn = document.querySelector(".button-show-more");
     if (more.style.overflow !== "visible" ) {
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
     );
   });
 
-*/
+
 /*
 let menu = document.querySelector('.menu');
 let openMenuButton = document.querySelector('.button-burger');

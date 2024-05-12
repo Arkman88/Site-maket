@@ -28,7 +28,12 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-  }
+}
+
+.hover:hover, .hover:active{
+opacity: 0.5;
+transition-duration: 0.2s;  
+}
 
 .header {
     display: flex;
@@ -55,15 +60,9 @@
     border-radius: 50%;
 }
 
-.button:hover, .button:active, button:focus {
-    opacity: 0.5;
-    transition-duration: 0.2s;  
-}
-
 .button-burger {
     background-image: url(images/burger.svg); 
     margin-left: 16px;  
-     
 }
 
 .logo {
@@ -165,51 +164,47 @@
     height: 90px; 
 }
 
-.content__menu li:hover, .content__menu li:active, .content__menu li:focus {
+.content__menu-link:focus {
     padding: 8px;
     border: 2px solid #B8FFEC;
     border-radius: 10px;
     background-color: #fff;
-  
 }
 
-.content__menu li, .content__menu li:visited, .content__menu li:disabled {
+.content__menu-link {
     padding: 8px;
     border: 2px solid #F8F8F8;
     border-radius: 10px;
     background-color: #F8F8F8;
+    color: #7E7E82;
+    text-decoration: none;
 }
 
 .content__menu::-webkit-scrollbar { display: none; }
 
-.content__menu li:nth-child(1) {
+.content__menu-link:nth-child(1) {
     width: 220px;
     margin-left: 16px;    
 }
 
-.content__menu li:nth-child(2) {
+.content__menu-link:nth-child(2) {
     width: 190px;
 }
 
-.content__menu li:nth-child(3) {
+.content__menu-link:nth-child(3) {
     width: 120px;
 }
 
-.content__menu li:nth-child(4) {
+.content__menu-link:nth-child(4) {
     width: 210px;
 }
 
-.content__menu li:nth-child(5) {
+.content__menu-link:nth-child(5) {
     width: 150px;
 }
 
-.content__menu li:nth-child(6) {
+.content__menu-link:nth-child(6) {
     width: 60px;
-}
-
-.content__menu a:visited, .content__menu a:link {
-    color: #7E7E82;
-    text-decoration: none;
 }
 
 .content__text {
@@ -230,11 +225,6 @@
     background: none;
     height: 24px;  
     margin-bottom: 16px;
-}
-
-.content__button:hover, .content__button:active, .content__button:focus {
-    opacity: 0.5;
-    transition-duration: 0.2s;  
 }
 
 .content__button::before {
@@ -266,7 +256,7 @@
 /*
  Страница меню
  */
- #menu {
+#menu {
     flex-direction: column;
     margin: 0;
     margin-right: auto;
@@ -275,12 +265,17 @@
     min-height: 100vh;
     background-color: #fff; 
     border: none;
-    overflow: visible;
+}
+
+#menu[open] {
+    display: flex;
 }
 
 #menu::backdrop {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
+
+#menu::-webkit-scrollbar { display: none; };
 
 .menu__name-txt {
     font-family: "TTLakes";
@@ -296,13 +291,11 @@
     align-items: center;
     margin-top: 33px;
     margin-bottom: 46px;
-
 }
 
 .button-alt-burger {
     background-image: url(images/alt_burger.svg);
     margin-left: 24px;
-    
 }
 
 .button-alt-search {
@@ -315,12 +308,13 @@
     margin-left: 16px;
 }
 
-.menu__logo:hover, .menu__logo:active, .menu__logo:focus{
+.menu__logo:hover, .menu__logo:active{
     opacity: 0.6;
     transition-duration: 0.5s;
 } 
 
 .menu__item {
+    position: relative;
     margin-bottom: 32px;
     margin-left: 24px;
     color: #1B1C21;
@@ -333,28 +327,17 @@
     color: #1B1C21;
 }
 
-
-.menu__link:hover, .menu__link:active, .menu__link:focus{
-    opacity: 0.5;
-    transition-duration: 0.2s;  
-} 
-
-.menu__name {
-    display: flex;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 32px;
+.menu__link:focus {
+    color: #7E7E82;
 }
 
-.menu__name::before {
+.menu__link:focus::before {
     content: url(images/highlight.svg);
     width: 4px;
     height: 32px;    
-}
-
-.menu__img {
-    width: 4px;
-    height: 40px;
+    position: absolute;
+    left: -24px;
+    top: -10px;
 }
 
 .footer {
@@ -400,12 +383,11 @@
     font-weight: 600;
 }
 
-.language__link:hover, .language__link:active, .language__link:focus {
+.language__link:focus {
     color: #7E7E82;
 } 
 
-.footer__mail:hover, .footer__mail:active, .footer__mail:focus, 
-.footer__phone:hover, .footer__phone:active, .footer__phone:focus{
+.footer__mail:focus, .footer__phone:focus{
     color: #7E7E82;
 } 
 
@@ -413,14 +395,14 @@
 /* 
 Swiper menu etc...
 */
-
 .content-swiper {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-  }
+    margin-bottom: 30px;
+}
   
 .header-swiper { 
     padding-left: 16px;
@@ -509,11 +491,6 @@ Swiper menu etc...
     margin-right: 16px;
     border: 2px solid #FF3E79;
     border-radius: 50%;
-}
-  
-.button-link:hover, .button-link:active, .button-link:focus {
-    opacity: 0.5;
-    transition-duration: 0.2s;  
 }
   
 .button-show-more {
